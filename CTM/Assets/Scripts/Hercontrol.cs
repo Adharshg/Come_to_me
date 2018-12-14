@@ -15,7 +15,7 @@ public class Hercontrol : MonoBehaviour {
 
 	void Start(){
 		rb = GetComponent<Rigidbody>();
-		isMoving = true;
+		//isMoving = true;
 		//count = 0;
 		//SetCountText();
 		//wintext.text="";
