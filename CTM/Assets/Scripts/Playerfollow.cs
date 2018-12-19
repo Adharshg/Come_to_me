@@ -17,6 +17,8 @@ public class Playerfollow : MonoBehaviour {
 
 	public float RotationSpeed = 5.0f;
 
+	
+
 	// Use this for initialization
 	void Start () {
 		_cameraOffset = transform.position - PlayerTransform.position;
@@ -30,7 +32,7 @@ public class Playerfollow : MonoBehaviour {
 			Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * RotationSpeed, Vector3.up);
 
 			_cameraOffset = camTurnAngle * _cameraOffset;
-
+			//float yRotation = transform.eulerAngles.y;
 			PlayerTransform.rotation = transform.rotation;
 			
 		}
